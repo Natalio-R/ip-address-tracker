@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/multicolor.jpg"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>IP Address Tracker</title>
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Leaflet library -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <div class="copy">
+      Created by
+      <a href="https://natalio.netlify.app" target="_blank">Natalio R</a>
+    </div>
+    <div class="header">
+      <h1>IP Address Tracker</h1>
+      <div class="input-ip">
+        <input
+          type="text"
+          placeholder="Search for any IP or domain"
+          id="search-ip"
+        />
+        <button id="search-button">
+          <img src="./images/icon-arrow.svg" width="10px" />
+        </button>
+      </div>
+    </div>
+    <div class="ip-details">
+      <div class="sec">
+        <h3>IP Address</h3>
+        <h1 id="ip-address"></h1>
+      </div>
+      <div class="sep"></div>
+      <div class="sec">
+        <h3>Location</h3>
+        <h1 id="ip-location"></h1>
+      </div>
+      <div class="sep"></div>
+      <div class="sec">
+        <h3>Timezone</h3>
+        <h1 id="ip-time">UTC</h1>
+      </div>
+      <div class="sep"></div>
+      <div class="sec">
+        <h3>ISP</h3>
+        <h1 id="ip-name"></h1>
+      </div>
+    </div>
+    <div class="map-tracker" id="display-map"></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
